@@ -1,0 +1,29 @@
+{
+    "name": "react-ssr-pitfalls",
+    "version": "1.0.0",
+    "description": "exploring common pitfalls in react server-side rendering",
+    "main": "index.ts ",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack --config ./src/webpack/webpack.client.js && webpack --config ./src/webpack/webpack.server.js && node dist/server/main.js"
+    },
+    "keywords": [
+        "react",
+        "ssr"
+    ],
+    "author": "yangirekun",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/preset-env": "^7.27.2",
+        "@babel/preset-react": "^7.27.1",
+        "babel-loader": "^10.0.0",
+        "typescript": "^5.7.3",
+        "webpack": "^5.97.1",
+        "webpack-cli": "^6.0.1"
+    },
+    "dependencies": {
+        "express": "^5.1.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    }
+}
